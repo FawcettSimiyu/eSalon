@@ -21,9 +21,15 @@ function Styles(style, salonist){
        $("#detail3").toggle('slow');
     });
 
-    $("#button1").on("click", function(){
+    $("#radio1").on("click", function(){
       $("#myForm1").toggle('slow');
   });
+  $("#radio2").on("click", function(){
+   $("#myForm2").toggle('slow');
+   $("#radio3").on("click", function(){
+      $("#myForm3").toggle('slow');
+  });
+});
    
    $("form#myForm1").submit(function(event){
    event.preventDefault();
