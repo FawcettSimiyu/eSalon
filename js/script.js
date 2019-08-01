@@ -17,9 +17,27 @@ $(document).ready(function(){
    $("#img6").on("click", function(){
       $("#detail6").toggle('slow');
    });
-//    $("#button1").on("click", function(){
-//       $("#getForm1").toggle('slow');
-//   });
+   $("#radio4").on("click",function(){
+     $("#myForm4").show('slow');
+   });
+
+   $("#radio41").on("click",function(){
+     $("#myForm4").hide('slow');
+   });
+   $("#radio5").on("click",function(){
+     $("#myForm5").show('slow');
+   });
+
+   $("#radio51").on("click",function(){
+     $("#myForm5").hide('slow');
+   });
+   $("#radio6").on("click",function(){
+     $("#myForm6").show('slow');
+   });
+
+   $("#radio61").on("click",function(){
+     $("#myForm6").hide('slow');
+   });
   $("form#myForm4").submit(function(event){
   event.preventDefault();
     var mwamba = $("input[name='salonist']:checked", '#forForm').val();
