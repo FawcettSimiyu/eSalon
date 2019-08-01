@@ -21,22 +21,35 @@ function Styles(style, salonist){
        $("#detail3").toggle('slow');
     });
 
-    $("#radio1").on("click", function(){
+    $("#yesRadio1").on("click", function(){
       $("#myForm1").toggle('slow');
+    });
+    $("#noRadio1").on("click", function(){
+      $("#myForm1").hide('slow');
   });
-  $("#radio2").on("click", function(){
+ 
+ 
+
+  $("#yesRadio2").on("click", function(){
    $("#myForm2").toggle('slow');
-   $("#radio3").on("click", function(){
+   }); 
+   $("#noRadio2").on("click", function(){
+      $("#myForm1").hide('slow');
+  });
+
+   $("#yesRadio3").on("click", function(){
       $("#myForm3").toggle('slow');
   });
+  $("#noRadio3").on("click", function(){
+   $("#myForm1").hide('slow');
 });
+
    
    $("form#myForm1").submit(function(event){
    event.preventDefault();
      var oburu = $("input[name='salonist']:checked", '#forForm').val(); 
      var hairStyle = parseInt( $(this).find( $("select#valueSelect")).val());
  
-     //alert(hairStyle);
      var radio = $("input[name='salonist']:checked").val();
       if(radio=="yes"){
          
@@ -47,10 +60,11 @@ function Styles(style, salonist){
         } else{
             jane = praseInt(0);
         }
-       //alert(deliveryFee);
  
      var totalPayment = new Styles(jane,hairStyle);
-     alert("Your total cost is Ksh. " + totalPayment.totalCost());
+
+     $("p#janeCost").append("Cost of hairstyle is Ksh. " + hairStyle + " " + "and " + "cost of service is Ksh. " + jane + ". " + "Total cost is Ksh. " + totalPayment.totalCost() + ".");
+     //alert("Your total cost is Ksh. " + totalPayment.totalCost());
  
    });
 
@@ -71,7 +85,8 @@ function Styles(style, salonist){
   
         //  alert(hairStyle);
       var totalPayment = new Styles(happiness,hairStyle);
-      alert("Your total cost is Ksh. " + totalPayment.totalCost());
+      $("p#happinessCost").append("Cost of hairstyle is Ksh. " + hairStyle + " " + "and " + "cost of service is Ksh. " + happiness + ". " + "Total cost is Ksh. " + totalPayment.totalCost() + ".");
+      //alert("Your total cost is Ksh. " + totalPayment.totalCost());
   
     });
     $("form#myForm3").submit(function(event){
@@ -91,7 +106,8 @@ function Styles(style, salonist){
       
             //  alert(hairStyle);
           var totalPayment = new Styles(paul,hairStyle);
-          alert("Your total cost is Ksh. " + totalPayment.totalCost());
+          //alert("Your total cost is Ksh. " + totalPayment.totalCost());
+          $("p#paulCost").append("Cost of hairstyle is Ksh. " + hairStyle + " " + "and " + "cost of service is Ksh. " + paul + ". " + "Total cost is Ksh. " + totalPayment.totalCost() + ".");
       
         });
  });
