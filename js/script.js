@@ -45,15 +45,13 @@ $(document).ready(function(){
     // alert(hairStyle);
     var radio = $("input[name='salonist']:checked").val();
      if(radio=="yes"){
-          //prompt("Enter your details in the form below")
        }
       if (radio=="yes"){
        var rosette = parseInt(1500);
        }
-      // alert(rosette);
-      // alert(hairStyle)
     var totalPayment = new Styles(rosette,hairStyle);
-    alert("Your total cost is Ksh. " + totalPayment.totalCost());
+    // alert("Your total cost is Ksh. " + totalPayment.totalCost());
+    $("p#mwamcost").append("Cost of hairstyle is Ksh. " + hairStyle + " " + "and " + "cost of service is Ksh. " + rosette + ". " + "Total cost is Ksh. " + totalPayment.totalCost())+".";
   });
   $("form#myForm5").submit(function(event){
   event.preventDefault();
@@ -70,7 +68,8 @@ $(document).ready(function(){
       // alert(rosette);
       // alert(hairStyle)
     var totalPayment = new Styles(samson,hairStyle);
-    alert("Your total cost is Ksh. " + totalPayment.totalCost());
+    // alert("Your total cost is Ksh. " + totalPayment.totalCost());
+    $("p#kabcost").append("Cost of hairstyle is Ksh. " + hairStyle + " " + "and " + "cost of service is Ksh. " + samson + ". " + "Total cost is Ksh. " + totalPayment.totalCost())+".";
   });
   $("form#myForm6").submit(function(event){
   event.preventDefault();
@@ -85,6 +84,7 @@ $(document).ready(function(){
        var shantel = parseInt(900);
        }
     var totalPayment = new Styles(shantel,hairStyle);
-    alert("Your total cost is Ksh. " + totalPayment.totalCost());
+    // alert("Your total cost is Ksh. " + totalPayment.totalCost());
+    $("p#mwecost").append("Cost of hairstyle is Ksh. " + hairStyle + " " + "and " + "cost of service is Ksh. " + shantel + ". " + "Total cost is Ksh. " + totalPayment.totalCost())+".";
   });
 });
