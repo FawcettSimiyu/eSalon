@@ -88,16 +88,16 @@
                   <h5>Cost For Services</h5>
                   <P>It costs Ksh. 1000 to access services of Jane.</P>
                   <button class="btn btn-info">Get this salonist?</button>
-                  <div id="radio1">
-                      <input type="radio" name="salonist" value="yes">Yes
-                   </div>
-                  <input type="radio" name="salonist" value="0">No
+                  
+                      
+                  <input type="radio" id="yesRadio1" name="salonist" value="yes">Yes
+                  <input type="radio" id="noRadio1" name="salonist" value="0">No
                   
                     <form id="myForm1" class="btn-success">
-                      <input type="text" placeholder="Location">
-                      <input type="text" placeholder="Contact" class="center">
-                      <select id="valueSelect" class="">
-                              <option value=" ">--Choose hairstyle--</option>
+                      <input type="text" placeholder="Location" required>
+                      <input type="text" placeholder="Contact" class="center" required>
+                      <select id="valueSelect" class="" required>
+                              <option value="" disabled selected>--Choose hairstyle--</option>
                               <option value="1000" name="box">Box-Braids</option>
                               <option value="800">Happily Married Style</option>
                               <option value="1500">Feed-in Braids</option>
@@ -107,6 +107,10 @@
                       <input type="submit" class="btn-success"> 
                   </form>
                </div>
+               <br><br>
+               <p id="janeCost">
+                   
+               </p>
               </div>
             <div class="col-md-4">
                   <img src="" alt="Salonist Image" id="img2">
@@ -137,15 +141,14 @@
                   <h5>Cost For Services</h5>
                   <P>It costs Ksh. 1500 to access services of Jane.</P>
                   <button class="btn btn-info" id="button2">Get this salonist?</button>
-                  <div id="radio2">
-                     <input type="radio" name="salonist" value="yes">Yes
-                  </div>
-                  <input type="radio" name="salonist" value="no">No
+                 
+                  <input type="radio" id="yesRadio2" name="salonist" value="yes">Yes
+                  <input type="radio" id="noRadio2" name="salonist" value="0">No
                   <form id="myForm2" class="btn-success">
-                      <input type="text" placeholder="Location">
-                      <input type="text" placeholder="Contact">
-                      <select id="valueSelect1">
-                              <option value=" ">--Choose hairstyle--</option>
+                      <input type="text" placeholder="Location" required>
+                      <input type="text" placeholder="Contact" required>
+                      <select id="valueSelect1" required>
+                              <option value="" disabled selected>--Choose hairstyle--</option>
                               <option value="1000" name="box">Box-Braids</option>
                               <option value="800">Happily Married Style</option>
                               <option value="1500">Feed-in Braids</option>
@@ -155,7 +158,11 @@
                       <input type="submit" class="btn-success">
                   </form>
                 </div>
-            </div>
+                <br><br>
+                <p id="happinessCost">
+                    
+                </p>
+              </div>
               <div class="col-md-4">
                     <img src="" alt="Salonist Image" id="img3">
                     <p>Name: Paul Johns</p> 
@@ -184,16 +191,14 @@
                     along Tom Mboya Street Opp. Odeon Cinema</p>
                     <h5>Cost For Services</h5>
                     <P>It costs Ksh. 2500 to access services of Jane.</P>
-                    <button class="btn btn-info" id="button3">Get this?</button>
-                    <div id="radio3">
-                       <input type="radio" name="salonist" value="yes">Yes
-                    </div>   
-                  <input type="radio" name="salonist" value="no">No
+                    <button class="btn btn-info" id="button3">Get this salonist?</button>
+                    <input type="radio" id="yesRadio3" name="salonist" value="yes">Yes
+                    <input type="radio" id="noRadio3" name="salonist" value="0">No
                   <form id="myForm3" class="btn-success">
                       <input type="text" placeholder="Location">
                       <input type="text" placeholder="Contact">
-                      <select id="valueSelect2">
-                              <option value=" ">--Choose hairstyle--</option>
+                      <select id="valueSelect2" required>
+                              <option value="" disabled selected>--Choose hairstyle--</option>
                               <option value="1000" name="box">Box-Braids</option>
                               <option value="800">Happily Married Style</option>
                               <option value="1500">Feed-in Braids</option>
@@ -203,6 +208,10 @@
                       <input type="submit" class="btn-success">   
                   </form>
               </div>
+              <br><br>
+              <p id="paulCost">
+                  
+              </p>
             </div>  
         </div>
      </div> 
