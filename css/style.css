@@ -1,4 +1,39 @@
 
+.checked {
+    color: orange;
+  }
+  input[type=text], select{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=submit]{
+    margin: 8px 128px;
+  }
+  #detail1{
+    display: none;
+  }
+  #detail2{
+    display: none;
+  }
+  #detail3{
+    display: none;
+  }
+  #myForm1{
+    display: none;
+  }
+  #myForm2{
+    display: none;
+  }
+  #myForm3{
+    display: none;
+  }
+
+
 h2{
     font-family: 'Calligraffitti';
     font-weight: bolder;
